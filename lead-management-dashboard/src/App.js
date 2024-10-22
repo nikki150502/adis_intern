@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, HashRouter } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
 import Leads from './components/Leads';
@@ -8,7 +8,7 @@ import Reports from './components/Reports';
 
 const App = () => {
   return (
-    <Router>
+    <HashRouter>
       <div className="app">
         <Sidebar />
         <div className="content">
@@ -20,7 +20,7 @@ const App = () => {
           </Routes>
         </div>
       </div>
-    </Router>
+    </HashRouter>
   );
 };
 
