@@ -1,0 +1,105 @@
+.leads {
+ 
+  width: 500px;
+  margin:  auto;
+  text-align: center;
+  padding: 20px; /* Padding around the component */
+  background-color: #f8f9fa; /* Light background for the leads section */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1 {
+  margin: 10px auto; /* Space below the heading */
+  color: #333; /* Dark text color */
+}
+
+.add-lead-form {
+  margin: 0 auto; /* Center the form */
+  max-width:400px; /* Max width for larger screens */
+}
+
+.add-lead-form input {
+  margin-top: 20px;
+  margin-bottom: 10px; /* Space between input fields */
+  padding: 10px; /* Padding inside input fields */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  width: 100%; /* Full width on small screens */
+}
+
+.add-lead-form button {
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px auto; /* Center the button */
+  width: 300px;
+  padding: 10px; /* Padding inside the button */
+  background-color: #28a745; /* Green background */
+  color: white; /* White text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.add-lead-form button:hover {
+  background-color: #6176b3; /* Darker green on hover */
+}
+
+.leads-list {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+}
+
+.lead-item {
+  padding: 10px; /* Padding inside each list item */
+  background-color: #fafafb; /* White background for list items */
+  margin-bottom: 10px; /* Space between list items */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.lead-item:hover {
+  background-color: #e3d8fc; /* Light gray background on hover */
+}
+
+.lead-details {
+  margin-top: 20px; /* Space above lead details */
+  padding: 15px; /* Padding inside the lead details section */
+  background-color: #ffffff; /* White background */
+  border-radius: 4px; /* Rounded corners */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.lead-details h2 {
+  margin-top: 0; /* Remove top margin */
+  color: #333; /* Dark text color */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+  .leads{
+    margin-left: 0;
+  }
+  .add-lead-form {
+    margin: 0 10px; /* Reduce margin on mobile */
+  }
+
+  .add-lead-form input,
+  .add-lead-form button {
+    width: 100%; /* Full width for input and button */
+    margin: 10px 0; /* Add vertical spacing */
+  }
+
+  .lead-item {
+    padding: 8px; /* Slightly reduce padding */
+    font-size: 14px; /* Slightly smaller font size */
+  }
+
+  .lead-details {
+    margin-top: 10px; /* Reduce top margin */
+  }
+}

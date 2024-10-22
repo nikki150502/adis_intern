@@ -1,0 +1,55 @@
+ /* Sidebar Styles */
+.sidebar {
+  text-align: center;
+  width: 250px; /* Width of the sidebar */
+  background-color: #34495e; /* Sidebar background color */
+  color: white; /* Text color */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange items vertically */
+  padding: 20px; /* Padding inside sidebar */
+  position: fixed; /* Fixed position */
+  height: 100%; /* Full height */
+  transition: width 0.3s ease; /* Smooth width transition */
+}
+
+.sidebar img {
+  width: 150px; /* Logo width */
+  margin-bottom: 20px; /* Space below logo */
+  border-radius: 100%; /* Circular logo */
+}
+
+/* Sidebar Links */
+.sidebar-links {
+  display: flex; /* Flexbox for links */
+  flex-direction: column; /* Vertical alignment */
+}
+
+.sidebar-link {
+  color: white; /* Link color */
+  text-decoration: none; /* No underline */
+  padding: 10px; /* Inner padding */
+  display: flex; /* Flexbox for link and icon */
+  align-items: center; /* Center align */
+  transition: background-color 0.3s; /* Smooth background transition */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Hover Effect for Links */
+.sidebar-link:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Background color on hover */
+}
+
+/* Link Text */
+.link-text {
+  margin-left: 10px; /* Space between icon and text */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+    display: none; /* Default collapsed width on mobile */
+  }
+
+   
+}

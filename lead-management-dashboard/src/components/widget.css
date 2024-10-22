@@ -1,0 +1,64 @@
+/* Widget Styles */
+.widget {
+    background-color: #f9f5f5; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding inside the widget */
+    margin: 15px; /* Space around each widget */
+    flex: 1; /* Allow widgets to grow and shrink */
+    transition: transform 0.3s; /* Smooth scaling effect */
+  }
+  .widget:hover{
+    background-color: rgb(194, 205, 242);
+  }
+  /* Heading Styles */
+  .widget h3 {
+    margin: 0; /* Remove default margin */
+    color: #333; /* Dark text color */
+    font-size: 1.5rem; /* Responsive font size */
+  }
+  
+  /* Paragraph Styles */
+  .widget p {
+    color: #666; /* Grey text for content */
+    font-size: 1rem; /* Responsive font size */
+    line-height: 1.5; /* Space between lines */
+  }
+  
+  /* Hover Effect */
+  .widget:hover {
+    
+    transform: scale(1.05); /* Slightly scale up on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .widget {
+      margin: 10px; /* Reduce margin on smaller screens */
+      padding: 15px; /* Reduce padding on smaller screens */
+    }
+  
+    .widget h3 {
+      font-size: 1.2rem; /* Smaller font size for heading */
+    }
+  
+    .widget p {
+      font-size: 0.9rem; /* Smaller font size for content */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .widget {
+      margin: 5px; /* Further reduce margin on very small screens */
+      padding: 10px; /* Further reduce padding on very small screens */
+    }
+  
+    .widget h3 {
+      font-size: 1rem; /* Even smaller font size for heading */
+    }
+  
+    .widget p {
+      font-size: 0.8rem; /* Even smaller font size for content */
+    }
+  }
+  

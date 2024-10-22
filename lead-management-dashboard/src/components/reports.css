@@ -1,0 +1,59 @@
+.reports {
+  text-align: center;
+  padding: 20px; /* Padding around the component */
+  background-color: #f8f9fa; /* Light background for the reports section */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1 {
+  margin: 10px auto; /* Space below the heading */
+  color: #333; /* Dark text color */
+}
+
+/* Button Styles */
+button {
+  margin: 10px; /* Margin around buttons */
+  padding: 10px 20px; /* Padding inside the button */
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* White text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* CSV Download Link Styles */
+.csv-link {
+  display: inline-block; /* Make link look like a button */
+  margin: 10px; /* Margin around the link */
+  padding: 10px 20px; /* Padding inside the link */
+  background-color: #28a745; /* Green background */
+  color: white; /* White text color */
+  text-decoration: none; /* No underline */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.csv-link:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  button,
+  .csv-link {
+    width: 100%; /* Full width on mobile */
+    margin: 10px 0; /* Add vertical spacing */
+  }
+
+  h1 {
+    font-size: 24px; /* Slightly smaller heading on mobile */
+  }
+}
