@@ -1,11 +1,13 @@
  /* Dashboard Container */
 .dashboard-container {
-  display: flex; /* Use flexbox to layout sidebar and dashboard */
- text-align: center;
+  display: flex;
+  text-align: center;
 }
-h1{
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 /* Sidebar should have a fixed width */
 .sidebar {
   width: 150px; /* Fixed width of the sidebar */
@@ -15,41 +17,46 @@ h1{
 .dashboard {
   text-align: center;
   flex: 1; /* Take the remaining space */
-  padding: 20px; /* Inner padding */
-  background-color: #ecf0f1; /* Light background color for dashboard */
-  min-height: 100vh; /* Ensure it takes full height */
-  margin-left: 200px; /* Adjust for the sidebar width */
+  padding: 20px;
+  background-color: #ecf0f1;
+  min-height: 100vh;
+  margin-left: 150px; /* Adjust for the sidebar width */
+  transition: margin-left 0.3s ease; /* Smooth transition */
 }
 
 /* Widgets Container */
 .widgets {
-  display: grid; /* Use grid layout for widgets */
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
-  gap: 20px; /* Space between widgets */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
 }
 
 /* Button Styles */
 button {
-  margin-bottom: 20px; /* Space below the button */
-  padding: 10px 15px; /* Inner padding */
-  background-color: #7cb3a8; /* Button background color */
-  color: white; /* Button text color */
-  border: none; /* Remove border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s ease; /* Smooth background transition */
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  background-color: #7cb3a8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 /* Button Hover Effect */
 button:hover {
-  background-color: #16a085; /* Darker shade on hover */
+  background-color: #16a085;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+  .sidebar {
+    width: 60px; /* Narrower sidebar on smaller screens */
+  }
+
   .dashboard {
-    padding: 10px; /* Less padding on smaller screens */
-    margin-left: 0; /* Reset margin for mobile view */
+    padding: 10px;
+    margin-left: 60px; /* Adjusted margin for minimized sidebar */
   }
 
   button {

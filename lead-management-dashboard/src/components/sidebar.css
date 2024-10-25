@@ -1,55 +1,65 @@
  /* Sidebar Styles */
 .sidebar {
   text-align: center;
-  width: 250px; /* Width of the sidebar */
-  background-color: #34495e; /* Sidebar background color */
-  color: white; /* Text color */
-  display: flex; /* Use flexbox for layout */
-  flex-direction: column; /* Arrange items vertically */
-  padding: 20px; /* Padding inside sidebar */
-  position: fixed; /* Fixed position */
-  height: 100%; /* Full height */
-  transition: width 0.3s ease; /* Smooth width transition */
+  width: 250px;
+  background-color: #34495e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: fixed;
+  height: 100%;
+  transition: width 0.3s ease;
 }
 
 .sidebar img {
-  width: 150px; /* Logo width */
-  margin-bottom: 20px; /* Space below logo */
-  border-radius: 100%; /* Circular logo */
+  width: 150px;
+  margin-bottom: 20px;
+  border-radius: 100%;
 }
 
 /* Sidebar Links */
 .sidebar-links {
-  display: flex; /* Flexbox for links */
-  flex-direction: column; /* Vertical alignment */
+  display: flex;
+  flex-direction: column;
 }
 
 .sidebar-link {
-  color: white; /* Link color */
-  text-decoration: none; /* No underline */
-  padding: 10px; /* Inner padding */
-  display: flex; /* Flexbox for link and icon */
-  align-items: center; /* Center align */
-  transition: background-color 0.3s; /* Smooth background transition */
-  border-radius: 5px; /* Rounded corners */
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s, transform 0.2s;
+  border-radius: 5px;
 }
 
 /* Hover Effect for Links */
 .sidebar-link:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* Background color on hover */
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1); /* Slightly enlarge icon */
 }
 
 /* Link Text */
 .link-text {
-  margin-left: 10px; /* Space between icon and text */
+  margin-left: 10px;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
   .sidebar {
     width: 60px;
-    display: none; /* Default collapsed width on mobile */
   }
 
-   
+  .sidebar img {
+    display: none;
+  }
+
+  .link-text {
+    display: none;
+  }
+
+  .sidebar-link:hover {
+    transform: scale(1.2); /* Increase scale on hover for mobile */
+  }
 }
